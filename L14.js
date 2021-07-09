@@ -6,7 +6,7 @@ const svg = d3.select('body')
 .append('svg')
 .attr('width',w)
 .attr('height',h)
-svg.selectAll("svg")
+svg.selectAll("rect")
   .data(dataset)
   .enter()
   .append("rect")
@@ -19,4 +19,4 @@ svg.selectAll("svg")
   .attr("height", (d, i) => {
     const increaseHeight = d * 3;
     return increaseHeight;
-  });
+  })
