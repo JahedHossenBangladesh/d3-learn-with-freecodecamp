@@ -1,0 +1,6 @@
+const scale = d3.scaleLinear()
+const output = scale(50)
+
+d3.select('body')
+.append('h2')
+.text(output)
